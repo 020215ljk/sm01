@@ -13,6 +13,7 @@
 
 <!--    配置静态资源路径-->
     <mvc:resources mapping="/statics/**" location="/statics/"/>
+    <mvc:resources mapping="/images/**" location="/images/"/>
 
 <!--    视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
