@@ -26,5 +26,14 @@
                 <input type="submit" value="点击上传">
     </form>
 </div>
+
+<div>
+    <div>
+        <a href="${pageContext.request.contextPath}/param1/load.do/blossom1.jpg"><img src="${pageContext.request.contextPath}/images/blossom1.jpg" width="300px"></a>
+        <a href="${pageContext.request.contextPath}/param1/load.do/blossom2.jpg"><img src="${pageContext.request.contextPath}/images/blossom2.jpg" width="300px"></a>
+        <a href="${pageContext.request.contextPath}/param1/load.do/菊花.jpg"><img src="${pageContext.request.contextPath}/images/菊花.jpg" width="300px"></a>
+        <a href="${pageContext.request.contextPath}/param1/load.do/Desert.jpg"><img src="${pageContext.request.contextPath}/images/Desert.jpg" width="300px"></a>
+    </div>
+</div>
 </body>
 </html>
