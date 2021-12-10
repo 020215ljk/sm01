@@ -2,6 +2,7 @@ package edu.soft1.controller;
 
 import edu.soft1.pojo.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -22,4 +23,10 @@ public class JsonController {
         return user;
     }
 
+    @RequestMapping(value = "setUser")
+    @ResponseBody
+    public User test11(@RequestBody User user){
+        System.out.println("接受到client的数据="+user);
+        return user;
+    }
 }

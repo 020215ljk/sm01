@@ -9,7 +9,18 @@
     <context:component-scan base-package="edu.soft1"/>
 
 <!--    springmvc注解驱动-->
-    <mvc:annotation-driven/>
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter" id="fastJsonHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>text/html;charset=utf-8</value>
+                        <value>application/json;charset=utf-8</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
 
 <!--    配置静态资源路径-->
     <mvc:resources mapping="/statics/**" location="/statics/"/>

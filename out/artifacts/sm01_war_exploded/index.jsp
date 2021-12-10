@@ -32,6 +32,9 @@
                 <input type="submit" value="登录"/>
                 <input type="reset" value="重置"/>
             </div>
+            <div>
+                <a href="reg.jsp">点击注册</a>
+            </div>
         </form>
     </section>
 </section>

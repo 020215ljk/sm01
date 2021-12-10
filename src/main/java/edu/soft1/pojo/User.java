@@ -13,13 +13,14 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User implements Serializable {
-    String username;
-    String password;
-    String age;
+    int id;
+    private String username;
+    private String password;
+    private String age;
 //    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JSONField(format = "yyyy/MM/dd")
-    Date birthday;
-    Address address;
+    private Date birthday;
+    private Address address;
 
 
 
